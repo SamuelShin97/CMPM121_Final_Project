@@ -18,14 +18,16 @@ public class which_screen : MonoBehaviour
         videoPlayer.clip = videoClip;
         videoPlayer.targetCamera = camera;
         videoPlayer.renderMode = UnityEngine.Video.VideoRenderMode.CameraNearPlane;
+        videoPlayer.waitForFirstFrame = false;
         //var gamescript = GameObject.Find("PlaceHolder");
+        SceneManager.sceneLoaded += OnSceneLoaded;
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        cam.SetActive(true);
         var gamescript = (win_or_lose)FindObjectOfType(typeof(win_or_lose));
         if (gamescript.win == false && SceneManager.GetActiveScene().buildIndex == 2)
         {
@@ -39,6 +41,10 @@ public class which_screen : MonoBehaviour
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         Debug.Log("wtf");
-        cam.SetActive(true);
+        if (cam != null)
+        {
+            cam.SetActive(true);
+        }
+        
     }
 }
