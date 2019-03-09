@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\bullet_checks.cs" />
+    <Compile Include="Assets\dr_who_angel_behavior.cs" />
     <Compile Include="Assets\first_person_behavior.cs" />
     <Compile Include="Assets\light_behavior.cs" />
     <Compile Include="Assets\lookatmouse.cs" />
@@ -79,6 +80,7 @@
     <Compile Include="Assets\Scripts\ShowSliderValue.cs" />
     <Compile Include="Assets\Scripts\TiltWindow.cs" />
     <Compile Include="Assets\Shoot.cs" />
+    <Compile Include="Assets\test_nav_mesh.cs" />
     <Compile Include="Assets\which_screen.cs" />
     <Compile Include="Assets\win_or_lose.cs" />
     <None Include="Assets\Fonts\Jupiter\LICENSE.txt" />
