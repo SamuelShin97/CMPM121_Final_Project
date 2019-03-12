@@ -49,7 +49,7 @@ public class dr_who_angel_behavior : MonoBehaviour
                     anim.speed = 1;
                     anim.SetTrigger("Walk");
                     Debug.Log("Object is not visible");
-                    transform.LookAt(player.transform.position);
+                    //transform.LookAt(player.transform.position);
                     agent.SetDestination(player.transform.position);
                 }
                 else
@@ -72,7 +72,7 @@ public class dr_who_angel_behavior : MonoBehaviour
             anim.speed = 1;
             anim.SetTrigger("Walk");
             Debug.Log("Object is no longer visible");
-            transform.LookAt(player.transform.position);
+            //transform.LookAt(player.transform.position);
             agent.SetDestination(player.transform.position);
         }
     }

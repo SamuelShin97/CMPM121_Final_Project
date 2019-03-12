@@ -62,9 +62,10 @@
   <ItemGroup>
     <Compile Include="Assets\bullet_checks.cs" />
     <Compile Include="Assets\dr_who_angel_behavior.cs" />
+    <Compile Include="Assets\enemy_health.cs" />
     <Compile Include="Assets\first_person_behavior.cs" />
+    <Compile Include="Assets\freeze.cs" />
     <Compile Include="Assets\light_behavior.cs" />
-    <Compile Include="Assets\lookatmouse.cs" />
     <Compile Include="Assets\movement.cs" />
     <Compile Include="Assets\play_movie.cs" />
     <Compile Include="Assets\Scene_Management.cs" />
@@ -80,9 +81,9 @@
     <Compile Include="Assets\Scripts\ShowSliderValue.cs" />
     <Compile Include="Assets\Scripts\TiltWindow.cs" />
     <Compile Include="Assets\Shoot.cs" />
+    <Compile Include="Assets\Spawn_Enemies.cs" />
     <Compile Include="Assets\test_nav_mesh.cs" />
-    <Compile Include="Assets\which_screen.cs" />
-    <Compile Include="Assets\win_or_lose.cs" />
+    <Compile Include="Assets\win.cs" />
     <None Include="Assets\Fonts\Jupiter\LICENSE.txt" />
     <None Include="Assets\Textures and Sprites\SF UI\Background\LICENSE.txt" />
     <None Include="Assets\Materials\UI-Default-No-Alpha.shader" />
