@@ -60,15 +60,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\bullet_checks.cs" />
-    <Compile Include="Assets\dr_who_angel_behavior.cs" />
-    <Compile Include="Assets\enemy_health.cs" />
-    <Compile Include="Assets\first_person_behavior.cs" />
-    <Compile Include="Assets\freeze.cs" />
-    <Compile Include="Assets\light_behavior.cs" />
-    <Compile Include="Assets\movement.cs" />
-    <Compile Include="Assets\play_movie.cs" />
-    <Compile Include="Assets\Scene_Management.cs" />
+    <Compile Include="Assets\my_scripts\bullet_checks.cs" />
+    <Compile Include="Assets\my_scripts\dr_who_angel_behavior.cs" />
+    <Compile Include="Assets\my_scripts\enemy_health.cs" />
+    <Compile Include="Assets\my_scripts\first_person_behavior.cs" />
+    <Compile Include="Assets\my_scripts\freeze.cs" />
+    <Compile Include="Assets\my_scripts\light_behavior.cs" />
+    <Compile Include="Assets\my_scripts\movement.cs" />
+    <Compile Include="Assets\my_scripts\play_movie.cs" />
+    <Compile Include="Assets\my_scripts\Scene_Management.cs" />
+    <Compile Include="Assets\my_scripts\Shoot.cs" />
+    <Compile Include="Assets\my_scripts\Spawn_Enemies.cs" />
+    <Compile Include="Assets\my_scripts\test_nav_mesh.cs" />
+    <Compile Include="Assets\my_scripts\win.cs" />
     <Compile Include="Assets\Scripts\ActiveStateToggler.cs" />
     <Compile Include="Assets\Scripts\ApplicationManager.cs" />
     <Compile Include="Assets\Scripts\ChangeColor.cs" />
@@ -80,10 +84,9 @@
     <Compile Include="Assets\Scripts\ScrollDetailTexture.cs" />
     <Compile Include="Assets\Scripts\ShowSliderValue.cs" />
     <Compile Include="Assets\Scripts\TiltWindow.cs" />
-    <Compile Include="Assets\Shoot.cs" />
-    <Compile Include="Assets\Spawn_Enemies.cs" />
-    <Compile Include="Assets\test_nav_mesh.cs" />
-    <Compile Include="Assets\win.cs" />
+    <Compile Include="Assets\SMC Pack 1\Demo\DemoAssets\V_SMC_Camera.cs" />
+    <Compile Include="Assets\SMC Pack 1\Demo\DemoAssets\V_SMC_Handler.cs" />
+    <Compile Include="Assets\SMC Pack 1\Demo\DemoAssets\V_Text.cs" />
     <None Include="Assets\Fonts\Jupiter\LICENSE.txt" />
     <None Include="Assets\Textures and Sprites\SF UI\Background\LICENSE.txt" />
     <None Include="Assets\Materials\UI-Default-No-Alpha.shader" />
