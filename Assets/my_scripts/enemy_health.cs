@@ -26,8 +26,9 @@ public class enemy_health : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") && this.enabled == true)
         {
+            Debug.Log("died");
             Cursor.visible = true;
             SceneManager.LoadScene(2);
         }

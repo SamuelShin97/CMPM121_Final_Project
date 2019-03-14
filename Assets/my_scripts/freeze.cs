@@ -10,6 +10,7 @@ public class freeze : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         anim.speed = 0;
+       
     }
 
     // Update is called once per frame

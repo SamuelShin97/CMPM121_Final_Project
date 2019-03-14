@@ -7,6 +7,9 @@ TagManager:
   - wall
   - end
   - enemy
+  - mob
+  - bullet
+  - static
   layers:
   - Default
   - TransparentFX

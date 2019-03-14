@@ -12,6 +12,7 @@ public class bullet_checks : MonoBehaviour
     public AudioClip zombie_death;
     Renderer rend;
     Light light;
+    public ParticleSystem particles;
     // Start is called before the first frame update
     void Start()
     {
@@ -61,19 +62,29 @@ public class bullet_checks : MonoBehaviour
         {
             rend.enabled = false;
             light.enabled = false;
+            
             audioData.PlayOneShot(hitmark);
+            
+            
             Debug.Log("hit enemy");
             
             collision.gameObject.GetComponent<enemy_health>().health--;
+            
             if (collision.gameObject.GetComponent<enemy_health>().health <= 0)
             {
+                particles.transform.position = collision.gameObject.GetComponent<Transform>().position;
+                particles.Play();
                 audioData.PlayOneShot(zombie_death);
                 //collision.gameObject.GetComponent<Transform>().position = new Vector3(1000, 1000, 1000);
                 spawn_enemies.enemy_count--;
                 Destroy(collision.gameObject);
             }
             
-            Destroy(this.gameObject, 5F);
+            Destroy(this.gameObject, 10F);
+        }
+        else if (collision.gameObject.CompareTag("static"))
+        {
+            Destroy(this.gameObject);
         }
 
         /*if (collision.collider.tag == "wall" || collision.collider.tag == "floor1" || collision.collider.tag == "floor2" ||
