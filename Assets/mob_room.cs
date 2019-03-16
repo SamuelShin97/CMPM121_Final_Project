@@ -5,10 +5,12 @@ using UnityEngine;
 public class mob_room : MonoBehaviour
 {
     public GameObject[] static_zombies;
+    AudioSource audioData;
+    bool once = false;
     // Start is called before the first frame update
     void Start()
     {
-        
+        audioData = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -19,8 +21,10 @@ public class mob_room : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && once == false)
         {
+            audioData.Play(0);
+            once = true;
             for (int i = 0; i < static_zombies.Length; i++)
             {
                 static_zombies[i].gameObject.tag = "enemy";

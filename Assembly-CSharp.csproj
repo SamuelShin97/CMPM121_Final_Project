@@ -90,6 +90,7 @@
     <Compile Include="Assets\SMC Pack 1\Demo\DemoAssets\V_Text.cs" />
     <None Include="Assets\Fonts\Jupiter\LICENSE.txt" />
     <None Include="Assets\Textures and Sprites\SF UI\Background\LICENSE.txt" />
+    <None Include="Assets\TriPlanar.shader" />
     <None Include="Assets\Materials\UI-Default-No-Alpha.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/Samuel/Documents/CMPM121_Final_Project/Escape the Maze/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
